@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .container {
+            margin: 20px;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            padding: 10px;
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz Results</h1>
+        <p>{{ result_message }}</p>
+        <p>{{ highest_score_message }}</p>
+        
+        
+        <a href="{{ url_for('quiz') }}"><button>Try Again</button></a>
+    </div>
+    <footer>
+        <p>2024 @Rumeysa Ağıl</p>
+    </footer>
+</body>
+</html>
