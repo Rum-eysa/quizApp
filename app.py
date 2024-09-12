@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 import os
-from app import app as application
+
 
 app = Flask(__name__)
 app.secret_key = os.urandom(24)
